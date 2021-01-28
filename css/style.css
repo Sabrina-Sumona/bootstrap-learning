@@ -1,0 +1,35 @@
+/* container class takes 15px from both side but container-fluid does not */
+.container{
+    /* border: 3px solid black;
+    padding: 10px; */
+}
+.container-fluid{
+    /* border: 3px solid black;
+    padding: 10px; */
+}
+/* col  takes less place as col no increases, but col-1 takes 1/12 block place every time, col-2 takes 2/12 block places and son on.... */
+.col{
+    border: 3px solid red;
+}
+.col-1{
+    border: 3px solid cornflowerblue;
+}
+.col-2{
+    border: 3px solid rgb(225, 100, 237);
+}
+.col-5{
+    border: 3px solid rgb(200, 176, 202);
+}
+.col-7{
+    border: 3px solid rgb(122, 206, 240);
+}
+.col-8{
+    border: 3px solid rgb(83, 112, 81);
+}
+.col-4{
+    border: 3px solid rgb(221, 235, 163);
+} 
+/* important must use over others
+.navbar{
+   color: black!important; 
+} */

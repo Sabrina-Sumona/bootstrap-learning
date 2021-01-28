@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello, Bootstrap!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- bg for background, text for text color & primary: blue, secondary: gray, danger: red, warning: yellow, light: white, dark: black -->
+      <!-- multiple classes can be added together -->
+      <!-- padding -->
+      <div class="col-5 bg-danger text-light p-3">this is 1st column</div>
+      <!-- padding: p-value; padiing in top: pt, bottom: pb, left & right: pl & pr.. -->
+      <div class="col-7 bg-warning .text-dark p-3">this is 2nd column</div>
+    </div>
+    <div class="row">
+      <!-- for small device it takes the total 12 blocks -->
+      <div class="col-8 col-sm-12 bg-primary text-light p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum, minima fugit? Doloremque distinctio autem adipisci, rem quae deserunt laboriosam a sequi eligendi
+        corporis, nihil architecto quasi quibusdam provident, delectus fugit? Temporibus, recusandae nihil inventore quo
+        id aliquam deleniti asperiores praesentium sunt quidem suscipit perferendis iure deserunt tenetur aspernatur
+        atque saepe autem reiciendis voluptatem exercitationem. Assumenda iusto autem eaque, eveniet quae voluptas
+        eligendi aspernatur non amet quidem unde deleniti accusantium ad eos magnam cum accusamus cumque placeat saepe.
+        Corporis fugiat fuga cumque facilis esse quas? Reiciendis explicabo architecto adipisci eveniet unde quos in
+        dolor perspiciatis debitis iure distinctio corporis similique, dolorum nobis repellat! Labore consequatur
+        quibusdam necessitatibus sed cum magni saepe eius unde architecto quam odio voluptatem inventore totam
+        distinctio deserunt, voluptates quos molestiae ad ex assumenda quisquam voluptas, possimus atque eum. Ipsam,
+        praesentium animi autem, veritatis alias minima dolor natus libero quasi dolore fugiat earum saepe esse quos
+        impedit officia omnis itaque atque. Eius perspiciatis ducimus nesciunt corrupti magnam sapiente rerum, ut
+        expedita est, voluptas voluptatibus architecto. Accusantium a optio ea, labore dolore mollitia repellat dolorum
+        voluptatem corporis dicta non, quod porro provident totam illum alias perspiciatis earum deleniti corrupti et
+        quaerat! At veritatis harum ipsam ducimus doloribus, dolore sunt dolores eius cumque voluptas maxime minus
+        explicabo aspernatur aperiam sapiente quis sequi atque nobis quidem temporibus sed assumenda. Consectetur
+        tenetur asperiores officiis, illum dignissimos libero architecto, minus accusantium debitis aliquam delectus!
+        Sapiente nisi error rem cum molestiae dolorem nulla odit, nemo delectus culpa cupiditate eum consequatur
+        commodi. Impedit, quo exercitationem?</div>
+      <div class="col-4 col-sm-12 bg-success .text-dark p-3">this is 4th column</div>
+    </div>
+
+  </div>
+
+  <!-- table -->
+  <div class="container mb-5 mt-5">
+    <!-- margining: m-value; margining top: mt, bottom: mb, left & right: ml & mr.. -->
+    <table class="table bg-warning">
+      <!-- The .table-dark class adds a black background to table headers-->
+      <thead class="table-dark">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- The .table-light class adds a grey background to table headers -->
+    <table class="table bg-success">
+      <thead class="table-light">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--The .table-striped class adds zebra-stripes to a table-->
+    <table class="table table-striped bg-primary">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- image -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent element. -->
+        <img src="res_fold/images/2020-10-15-16-14-57-408.jpg" class="img-fluid" alt="myself">
+      </div>
+      <div class="col">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita iste inventore! Eligendi aut ab nesciunt
+          nobis voluptates enim dolore mollitia culpa unde odit. Dignissimos sint laudantium, officia quibusdam velit
+          reprehenderit aperiam eius. At quo dicta iste aperiam mollitia sint, tempora iure nulla fugiat veniam expedita
+          eligendi quidem facilis in. Dolorum delectus culpa vel eaque ducimus, quas fugiat temporibus iusto nobis
+          nesciunt quae error voluptates doloremque omnis asperiores blanditiis! Veniam, ad! Obcaecati fugit sit porro
+          dolorem perspiciatis hic quo accusantium nulla rem veniam natus quidem tempora ad nemo corrupti, eos
+          consequatur. Facere asperiores, labore quas doloribus consequuntur repudiandae. Pariatur illum, dicta aliquid
+          perspiciatis, eos, velit rerum reprehenderit fugit sunt tempore molestias explicabo dolores ea nihil quod
+          doloribus nobis debitis mollitia itaque sed numquam sequi unde! Asperiores ea dolore error eveniet quod, unde
+          repudiandae repellat hic deserunt velit? Omnis error ipsum reprehenderit non ratione, ut velit magni et odio
+          saepe reiciendis optio, hic quibusdam quod aperiam itaque fugiat libero sint iure? Vitae earum culpa, quae
+          perspiciatis quasi vel explicabo quaerat nostrum hic. Doloribus a sapiente quae dolorem, numquam quod omnis
+          asperiores porro, dignissimos perspiciatis aperiam nisi repellat fugiat ratione veritatis mollitia odit
+          voluptatibus eum delectus voluptatem, error vitae ad? Illo, magnam.</p>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <!-- The jumbotron component is removed in favor of utility classes like .bg-light for the background color and .p-* classes to control padding. -->
+  <div class="container-fluid bg-light p-5">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+
+  <!-- alert -->
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+        that you can see how spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="alert alert-danger" role="alert">
+      <h4 class="alert-heading">Error!</h4>
+      <p>Ohho, there is a danger.. Stay alert. This example text is going to run a bit longer so that you can see how
+        spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+  </div>
+
+
+  <!-- format documentation: to arrange the file -->
+
+
+  <!-- button -->
+  <div class="container">
+    <button class="btn btn-primary btn-outline-info">This is simple button</button>
+  </div>
+
+  <!-- badges -->
+  <div>
+    <div class="container">
+      <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    </div>
+    <div class="container">
+      <h2>Example heading <span class="badge bg-primary">2</span></h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">50% have done</div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
